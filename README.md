@@ -1,20 +1,16 @@
-# create-svelte
+# PeerPiper.io
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
-## Creating a project
+## Contributing
 
-If you're seeing this, you've probably already done this step. Congrats!
+Feel free to join the community by opening issues or pull requests on Github!
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+The guide is written in markdown, so non-technical people can easily read and edit too. It's saved at:
 
-# create a new project in my-app
-npm init svelte@next my-app
 ```
-
-> Note: the `@next` is temporary
+\peerpiper-website\src\routes\guide.svx
+```
 
 ## Developing
 
