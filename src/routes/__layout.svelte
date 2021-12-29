@@ -22,7 +22,7 @@
 	<span>Join the community</span>
 	<div>
 		<div class="icons">
-			<a href="https://github.com/DougAnderson444/" target="_blank" rel="noopener noreferrer"
+			<a href="https://github.com/peerpiper/" target="_blank" rel="noopener noreferrer"
 				><i class="fa fa-github fa-2x" aria-hidden="true" /></a
 			><a href="https://discord.gg/pxK3rApf" target="_blank" rel="noopener noreferrer">
 				<Discord />
