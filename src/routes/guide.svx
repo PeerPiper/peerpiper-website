@@ -1,0 +1,20 @@
+---
+layout: standard
+title: Guide
+---
+
+<section>
+
+### About
+
+PeerPiper is a gateway to Web 3.0 enabling users to save, share and sell their data in Web3.
+
+### Save
+
+Saving is easy.
+
+### Web3 Portal (Wallet/Keychain)
+
+The Web3 Portal is known as a "wallet" in the crypto space (or a keychain) as it's a place to hold your keys. In Web3 users needs a keypair to operate instead of usernames and passwords.
+
+If you don't have a keypair, you can create one easily (for free) right in the browser. If you want to import an existing keypair, you will soon be able to do that also.
