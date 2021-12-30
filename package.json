@@ -1,9 +1,9 @@
 {
 	"name": "peerpiper-website",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"scripts": {
 		"dev": "svelte-kit dev --port=34569",
-		"build": "svelte-kit build",
+		"build": "svelte-kit build --out public",
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
