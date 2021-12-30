@@ -1,6 +1,6 @@
 {
 	"name": "peerpiper-website",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"scripts": {
 		"dev": "svelte-kit dev --port=34569",
 		"build": "svelte-kit build",
@@ -33,7 +33,7 @@
 	},
 	"license": "MIT-CC",
 	"engines": {
-		"node": ">=14.13",
-		"npm": ">=8.3.0"
+		"npm": ">=8.0.0",
+		"node": ">=14.18.1"
 	}
 }
