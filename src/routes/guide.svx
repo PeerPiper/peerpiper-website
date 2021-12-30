@@ -1,20 +1,40 @@
 ---
-layout: standard
-title: Guide
+layout: "standard"
+title: "Guide"
 ---
 
-<section>
+<script>
+    import Tweet from './_assets/tweet.svelte'
+</script>
 
 ### About
 
-PeerPiper is a gateway to Web 3.0 enabling users to save, share and sell their data in Web3.
+PeerPiper is a gateway to Web 3.0 enabling users to easily save, share and sell their data in Web3. We're here to connect your data, not collect it.
+
+<Tweet />
+
+### Alpha Version Notice
+
+This project is in it's early days! There are many things missing and some of the workings may be broken. Use with caution, none of the functionality of PeerPiper comes with a warranty (yet). That being said, join our community, pass along feedback, buy an NFT, and enjoy your time here with us!
+
+### Privacy Policy
+
+All user plain text (unencrypted) data is saved locally in the user's browser, kind of like how the browser saves your username and passwords for site you frequent. So PeerPiper has no access to it at all. When users save any data, it's automatically encrypted and can only be accessed by those who the user chooses, in which case it's only decrypted on that other user's device. So all data is kept private by default, and unencrypted data can't be shared with any party without the user's permission.
+
+The save the data in the user's browser, PeerPiper uses a combination on cookies, IndexedDb, and LocalStorage which ar all local to the browser.
 
 ### Save
 
-Saving is easy.
+Saving is meant to be easy. Just pick a template format, enter in the data, save and share.
 
 ### Web3 Portal (Wallet/Keychain)
 
-The Web3 Portal is known as a "wallet" in the crypto space (or a keychain) as it's a place to hold your keys. In Web3 users needs a keypair to operate instead of usernames and passwords.
+The Web3 Portal is known as a "wallet" in the crypto space, or what we like to call a keychain, as it's a place to hold your keys. In Web3 users needs a keypair (Public + Private keys) to operate instead of usernames and passwords.
 
 If you don't have a keypair, you can create one easily (for free) right in the browser. If you want to import an existing keypair, you will soon be able to do that also.
+
+### Contacts
+
+You can add contacts from across the web. More on this to come!
+
+
