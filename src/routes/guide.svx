@@ -35,6 +35,6 @@ If you don't have a keypair, you can create one easily (for free) right in the b
 
 ### Contacts
 
-You can add contacts from across the web. More on this to come!
+You can add contacts from across the web. This will point you to their public key. More on this to come!
 
 
