@@ -1,0 +1,23 @@
+---
+layout: "standard"
+title: "Wallets"
+---
+
+### Wallet Mirrors:
+
+Here are a list of places you can access the latest wallet deployments:
+
+[iframe-wallet.pages.dev  ⭷](https://iframe-wallet.pages.dev/)
+
+### Wallets
+
+The wallet (aka Keychain) is where your secret key is stored. Hence, it is probably the most critical thing to be able to control.
+
+That's why the PeerPiper Web3 Wallet is 
+
+1. Source Code available
+2. Self-hostable - Use our site, or deploy your own.
+
+Take a look at the code, anytime. Deploy your own instance, anytime. Now THAT is Web3.0.
+
+
