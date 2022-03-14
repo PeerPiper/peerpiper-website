@@ -21,6 +21,7 @@ const config = {
 			scss: {
 				// prependData: "@import 'src/lib/styles/variables.scss';"
 			}
+			// preserve: ['module'] // https://github.com/sveltejs/svelte-preprocess/issues/261
 		})
 	],
 	kit: {
