@@ -3,7 +3,12 @@
 	import Medium from '$lib/graphics/medium.svelte';
 	import Twitter from '$lib/graphics/twitter.svelte';
 	import Header from '$lib/header/Header.svelte';
+	import WalletConnector from '$lib/WalletConnector.svelte';
+
 	import '../app.css';
+
+	// TODO: Make a svelte store?
+	let wallet; // use this in the apps to access wallet features, like wallet.ed25519.sign(someData)
 </script>
 
 <svelte:head>
@@ -12,6 +17,9 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 	/>
 </svelte:head>
+
+<WalletConnector bind:wallet />
+
 <Header />
 
 <main>
