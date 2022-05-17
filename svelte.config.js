@@ -28,12 +28,13 @@ const config = {
 		// adapter: adapter(),
 		// adapter: vercel(),
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
+
 		// adapter: staticIPFSAdapter({
 		// 	removeBuiltInServiceWorkerRegistration: true,
 		// 	injectPagesInServiceWorker: true
 		// })
-		adapter: adapter_static()
+		adapter: adapter_static(),
+		prerender: { default: true }
 	}
 };
 
