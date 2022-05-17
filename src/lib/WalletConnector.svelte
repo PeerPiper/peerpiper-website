@@ -7,7 +7,7 @@
 	export let wallet; // the variable you interact with the wallet functions
 
 	let Web3WalletMenu; // the Component variable
-	let inputUrl = 'https://peerpiper.github.io/iframe-wallet-engine'; // the default URL, can be your own or the user's own URL
+	let inputUrl = 'https://peerpiper.github.io/iframe-wallet-sveltekit'; // the default URL, can be your own or the user's own URL
 
 	onMount(async () => {
 		({ Web3WalletMenu } = await import('@peerpiper/web3-wallet-connector'));
