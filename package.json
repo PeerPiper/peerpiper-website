@@ -1,6 +1,6 @@
 {
 	"name": "peerpiper-website",
-	"version": "0.1.12",
+	"version": "0.1.13",
 	"scripts": {
 		"dev": "svelte-kit dev --port=34569",
 		"build": "svelte-kit build",
@@ -30,7 +30,7 @@
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
 		"@lukeed/uuid": "^2.0.0",
-		"@peerpiper/web3-wallet-connector": "github:peerpiper/web3-wallet-connector",
+		"@peerpiper/web3-wallet-connector": "github:peerpiper/web3-wallet-connector#dade9c3df0fb69fe066bd458425ee251a1ab33c4",
 		"cookie": "^0.4.1",
 		"mdsvex": "^0.9.8",
 		"svelte-typewriter": "^3.0.0-alpha.5"
