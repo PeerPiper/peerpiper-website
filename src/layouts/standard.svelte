@@ -24,8 +24,11 @@
 	<title>{title}</title>
 	<meta property="og:title" content={title} />
 	<meta property="og:image" content={coverImageUrl} />
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css"
+	/>
 </svelte:head>
-
 <article>
 	<h1>{title}</h1>
 	<slot />
