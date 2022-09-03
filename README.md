@@ -1,6 +1,8 @@
-# PeerPiper.io
+# PeerPiper.io Website (hosted on Vercel)
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+The PeerPiper.io Website.
+
+Built with Svelte. Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
 ## Contributing
 
@@ -9,7 +11,7 @@ Feel free to join the community by opening issues or pull requests on Github!
 The guide is written in markdown, so non-technical people can easily read and edit too. It's saved at:
 
 ```
-\peerpiper-website\src\routes\guide.svx
+./src/routes/guide.svx
 ```
 
 ## Developing
