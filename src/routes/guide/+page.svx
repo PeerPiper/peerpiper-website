@@ -4,7 +4,7 @@ title: "Guide"
 ---
 
 <script>
-    import Tweet from './_assets/tweet.svelte'
+    import Tweet from '../_assets/tweet.svelte'
 </script>
 
 ### About

@@ -113,7 +113,7 @@
 		<div class="node three" data-label="Businesses" />
 	</div>
 	<div class="typewriter">
-		<Typewriter loopRandom cascade interval={50}>
+		<Typewriter mode={'loopRandom'} cascade interval={50}>
 			<h2>Latest Phone number</h2>
 			<h2>Best e-mail address</h2>
 			<h2>Latest Home Address</h2>

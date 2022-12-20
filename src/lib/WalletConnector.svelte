@@ -15,5 +15,10 @@
 </script>
 
 {#if Web3WalletMenu}
-	<Web3WalletMenu bind:wallet {inputUrl} />
+	<Web3WalletMenu
+		{inputUrl}
+		on:walletReady={(e) => {
+			wallet = e.detail.wallet;
+		}}
+	/>
 {/if}

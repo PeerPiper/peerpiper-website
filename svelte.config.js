@@ -25,7 +25,7 @@ const config = {
 		})
 	],
 	kit: {
-		// adapter: adapter(),
+		adapter: adapter()
 		// adapter: vercel(),
 		// hydrate the <div id="svelte"> element in src/app.html
 
@@ -33,8 +33,7 @@ const config = {
 		// 	removeBuiltInServiceWorkerRegistration: true,
 		// 	injectPagesInServiceWorker: true
 		// })
-		adapter: adapter_static(),
-		prerender: { default: true }
+		// adapter: adapter_static(),
 	}
 };
 

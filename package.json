@@ -2,10 +2,10 @@
 	"name": "peerpiper-website",
 	"version": "0.1.13",
 	"scripts": {
-		"dev": "svelte-kit dev --port=34569",
-		"build": "svelte-kit build",
-		"package": "svelte-kit package",
-		"preview": "svelte-kit preview",
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"package": "svelte-package",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
@@ -13,8 +13,8 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/adapter-static": "^1.0.0-next.24",
-		"@sveltejs/adapter-vercel": "^1.0.0-next.32",
+		"@sveltejs/adapter-static": "next",
+		"@sveltejs/adapter-vercel": "next",
 		"@sveltejs/kit": "next",
 		"@types/cookie": "^0.4.1",
 		"prettier": "^2.4.1",
@@ -24,20 +24,21 @@
 		"svelte-preprocess": "^4.9.4",
 		"sveltejs-adapter-ipfs": "^0.1.10",
 		"tslib": "^2.3.1",
-		"typescript": "^4.4.3"
+		"typescript": "^4.4.3",
+		"vite": "4.0.2"
 	},
 	"type": "module",
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
 		"@lukeed/uuid": "^2.0.0",
-		"@peerpiper/web3-wallet-connector": "github:peerpiper/web3-wallet-connector#dade9c3df0fb69fe066bd458425ee251a1ab33c4",
+		"@peerpiper/web3-wallet-connector": "^0.1.19",
 		"cookie": "^0.4.1",
 		"mdsvex": "^0.9.8",
-		"svelte-typewriter": "^3.0.0-alpha.5"
+		"svelte-typewriter": "^3.1.4"
 	},
 	"license": "MIT-CC",
 	"engines": {
 		"npm": ">=8.0.0",
-		"node": ">=14.18.1"
+		"node": ">=16.14.0"
 	}
 }
