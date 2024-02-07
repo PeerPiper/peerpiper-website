@@ -1,7 +1,15 @@
 ---
 layout: "standard"
-title: "PeerPiper Protocol Green Paper"
+title: PeerPiper Protocol Green Paper Published
+image: https://peerpiper.io/protocol.png
+description: "PeerPiper Protocol Green Paper"
 ---
+
+<svelte:head>
+		<meta property="og:image" content={image} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="627" />
+</svelte:head>
 
 <script>
 	import Protocol from '$lib/graphics/protocol.svelte';
