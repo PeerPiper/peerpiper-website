@@ -1,9 +1,9 @@
 import adapter from '@sveltejs/adapter-auto';
 import preprocess from 'svelte-preprocess';
 import { mdsvex } from 'mdsvex';
-import vercel from '@sveltejs/adapter-vercel';
 import staticIPFSAdapter from 'sveltejs-adapter-ipfs';
 import adapter_static from '@sveltejs/adapter-static';
+import slug from 'remark-slug';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -15,7 +15,8 @@ const config = {
 			extensions: ['.svx', '.md', '.svelte.md'],
 			layout: {
 				standard: 'src/layouts/standard.svelte'
-			}
+			},
+			remarkPlugins: [slug]
 		}),
 		preprocess({
 			scss: {

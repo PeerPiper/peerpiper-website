@@ -1,4 +1,4 @@
-# PeerPiper.io Website (hosted on Vercel)
+# PeerPiper.io Website (hosted on Cloudflare Pages)
 
 The PeerPiper.io Website.
 
