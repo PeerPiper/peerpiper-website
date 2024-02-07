@@ -16,8 +16,11 @@
 		</svg>
 		<ul>
 			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
+			<li class:active={$page.url.pathname === '/paper'}>
+				<a sveltekit:prefetch href="/paper">GreenPaper</a>
+			</li>
 			<li class:active={$page.url.pathname === '/guide'}>
-				<a sveltekit:prefetch href="/guide">Guide</a>
+				<a sveltekit:prefetch href="/guide">About</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
