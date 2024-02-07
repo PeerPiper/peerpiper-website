@@ -3,6 +3,10 @@ layout: "standard"
 title: "PeerPiper Protocol Green Paper"
 ---
 
+<script>
+	import Protocol from '$lib/graphics/protocol.svelte';
+</script>
+
 ## Executive Summary
 
 ### The Problem
@@ -43,6 +47,8 @@ PeerPiper Protocol is a novel approach to connect and stay connected with others
 In Web 2.0 and even in emerging Web 3.0, contacts and accounts are fragmented across different platforms and services. This makes it difficult to stay connected with others, or connect when two people are fans of different blockchains. PeerPiper Protocol is designed to solve this problem by providing a way to connect and stay connected with others in a decentralized environment, no matter whether you have an email address, phone number, or public key.
 
 # Protocol Overview
+
+<Protocol />
 
 The protocol works as follows:
 
