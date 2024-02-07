@@ -1,0 +1,125 @@
+---
+layout: "standard"
+title: "PeerPiper Protocol Green Paper"
+---
+
+## Executive Summary
+
+### The Problem
+
+Managining contacts for both consumers and businesses remains a challenge even with our modern technology. Contacts and accounts are fragmented across different platforms and services, making it difficult to stay connected and up to date. 
+
+Because contacts and accounts are fragmented, the app layers on top are also broken and rarely interoperate with each other. I have your yahoo email but you've since surrendered it to the spam bots and have moved to gmail. The old phone number I have for you no longer works, and I don't have a mechanism to get fed your new one. I connected with you years ago on Twitter, but you don't use it anymore and I have no means of knowing what your preferred platform is nowadays. 
+
+Having so many options to connect has left us ironically disconnected.
+
+### The Solution
+
+Imagine being able to connect with someone once, and forever follow updates to their contact and data changes. Imagine if I could look up your old phone number which would point me to your new one. 
+
+The solution to this problem is not to store all this information in a centralized database behind someone else's walled garden. The solution is to give the user control over their own data, and to provide a way for them to connect and stay connected with others in a decentralized environment.
+
+PeerPiper Protocol is a novel approach to connect and stay connected with others in a "mecentralized" fashion. It is designed to be blockchain absent, and public key transparent, which means it can be used with or without blockchains, with or without gas fees. It is a gateway from Web 2.0 to Web 3.0 since it enables users to easily create, invite, save, share and sell their data in Web 3.0 based on common, known Web 1.0 technology such as name, email and phone numbers. 
+
+The solution is inherently controlled and owned by the user, hence the term "mecentralized" and will remain that way by design. PeerPiper is designed to connect your data, not collect it.
+
+## Table of Contents 
+
+1. [Introduction](#introduction)
+2. [Background](#background)
+3. [Protocol Overview](#protocol-overview)
+4. [Use Cases](#use-cases)
+5. [Technical Details](#technical-details)
+6. [Conclusion](#conclusion)
+
+# Introduction
+
+PeerPiper is a gateway to Web 3.0 enabling users to easily connect and stay connected, so they can save, share and optionally sell their data in Web3. We're here to connect your data, not collect it.
+
+PeerPiper Protocol is a novel approach to connect and stay connected with others in a decentralized environment. It is designed to be blockchain absent which mean it can be used across different blockchains. It is a gateway from Web 2.0 to Web 3.0 since it enables users to easily create, invite, save, share and sell their data in Web3. We're here to connect your data, not collect it.
+
+# Background
+
+In Web 2.0 and even in emerging Web 3.0, contacts and accounts are fragmented across different platforms and services. This makes it difficult to stay connected with others, or connect when two people are fans of different blockchains. PeerPiper Protocol is designed to solve this problem by providing a way to connect and stay connected with others in a decentralized environment, no matter whether you have an email address, phone number, or public key.
+
+# Protocol Overview
+
+The protocol works as follows:
+
+1. I create a credential for you based on simple, old world values such and name and number. This credential is made of some unique attributes I know about you, for example:
+    - Your email address
+    - Your phone number
+    - Your public key
+    - Your social media handle
+    - Your website
+    - Your physical address
+    - Your employer
+    - Your job title
+    - Your birthday
+    - Even a selfie of the two of us together
+
+2. Once I have created the credential, I send it to you. I choose the method of delivery, but I want to make sure it only is available to you, so that I know it's really you. I could choose, for example:
+    - Email
+    - SMS
+    - Social Media
+    - Web3.0 channel
+
+3. You receive the credential and accept it using any app running the PeerPiper Protocol. The PeerPiper Protocol can run anywhere there is internet, such as 
+    - peerpiper.io
+    - your website
+    - IPFS gateway
+    - Arweave gateway
+
+4. Once you accept the credential, you can extend the credential by adding your own details, such as your:
+    - Issuer Key (so you can send your own credentials to others)
+    - Contact details (email, phone number, public key, social media handle, website, physical address)
+    - Data details (IPFS Root CID, DID Document, etc.)
+    - anything else that can be turned into bytes
+
+  Adding any particular detail is discretionary and optional, including your Issuer Key, but adding your Issuer Key will allow me to easily follow you and make updates more efficient. You can also send me a return credential, so that you can follow my updates, but that's also optional.
+
+5. Once you've added your details that you want others to get updates on, you publish this extended credential using the PeerPiper Protocol:
+     - The "key": your attributes plus my Issuer Key, and 
+     - The "value": is the additional details and the proof that you had the credential I issuerd you earlier. 
+
+  With this published, I can get your updated values. 
+
+6. To publish, send an initial broadcast of the Key + Value, so that anyone subscribed to that Key gets an initial value. Next, respond to any query broadcasts for same Key. The protocol allows for a "super peer" (PeerPiper node which is always online by design) to listen and conduct rebroadcast in case the sender or reciever is offline and cannot query or broadcast. 
+
+7. Lastly, I subscribe to updates to this Key, on the same topics (A: my Issuer Key + issued Attrs, B: their optionally added Issuer Key).
+
+# Use Cases
+
+PeerPiper Protocol can be used in a variety of use cases, including:
+
+1. **Personal Contacts**: You can use PeerPiper Protocol to connect and stay connected with your friends, family, and colleagues. You can also use it to connect with people you meet at events, conferences, and other social gatherings.
+
+2. **Business Contacts**: You can use PeerPiper Protocol to connect and stay connected with your business contacts, such as customers, clients, and partners. You can also use it to connect with people you meet at trade shows, networking events, and other business gatherings.
+
+3. **Social Media**: You can use PeerPiper Protocol to connect and stay connected with your social media contacts, such as followers, friends, and fans. You can also use it to connect with people you meet on social media platforms, such as Twitter, Facebook, and Instagram.
+
+4. **Web3.0**: You can use PeerPiper Protocol to connect and stay connected with your Web3.0 contacts, such as blockchain developers, decentralized finance (DeFi) users, and non-fungible token (NFT) collectors. You can also use it to connect with people you meet on Web3.0 platforms, such as Ethereum, Solana, and Polkadot.
+
+# Technical Details
+
+## Delegated Anonymous Credentials
+
+Underlying the PeerPiper Protocol is Delegatable Anonymous Credentials (DAC) which is a cryptographic primitive that allows us to issue a credential to an audience without knowing their Public Key details in advance. In this sense, it makes the "invite" process of the Protocol non-interactive, which is appealing for onboarding new users.
+
+Once invited though, DAC is designed in such a way that the only people who can successful use the credential is someone who has both 1) the credential, and 2) all the matching attribute preimages that were used to make the credential. In other words, if a credential was emailed to you and your email was hacked, the hacker would still need to know all the information included in the credential to use it.
+
+Another appealing security aspect of the DAC use in the protocol is that multiple DAC can be sent through different channels, such as one over email, another over SMS and another over Direct Message, and any hacker would have to have access to all three accounts plus know the preimages in order to hack the system.
+
+In the event that a hacker does get access to all three channels and knows the preimages, the Issuer would simply re-issue the credential once the persons accounts have been secured, and they would regain control over their portion of the protocol.
+
+DAC makes key rotation very simple as well, the user simply extends their given credential using a new public key, updates their extended values using this key, and their followers continue to get updates without any effort on their part.
+
+In the event the user loses their keys, they can be recovered by the same mechanism as key rotation above.
+
+## Network Publishing
+
+The protocol is both blockchain absent and network agnostic. The protocol Key Value pairs can be published anywhere, on any network, but there will be common and popular networks that make the most sense to use. For example, the protocol can be broadcast over [libp2p](https://libp2p.io/), but other networks can be added to this list as the protocol requires.
+
+# Conclusion
+
+Using the PeerPiper Protocol gives us a means to discover, identify, and exchange details with each effectively forever. For the first time, we can connect and stay connected no matter what platforms, network, blockchain, or app we are using. The protocol is designed to be "mecentralized" and function without a centralized authority, and to be easy to invite and onboard new users who do not have public keys and are not accustomed to managing them. 

@@ -46,7 +46,9 @@ body::before {
 
 h1,
 h2,
-p {
+p,
+ul,
+li {
 	font-weight: 400;
 	color: var(--heading-color);
 }
