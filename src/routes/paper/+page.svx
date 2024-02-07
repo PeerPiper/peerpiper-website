@@ -1,6 +1,6 @@
 ---
 layout: "standard"
-title: PeerPiper Protocol Green Paper Published
+title: PeerPiper Protocol Green Paper
 image: https://peerpiper.io/protocol.png
 description: "PeerPiper Protocol Green Paper"
 ---
