@@ -1,13 +1,11 @@
 ---
 layout: "standard"
-title: "Guide"
+title: "About"
 ---
 
 <script>
     import Tweet from '../_assets/tweet.svelte'
 </script>
-
-### About
 
 PeerPiper is a gateway to Web 3.0 enabling users to easily save, share and sell their data in Web3. We're here to connect your data, not collect it.
 
