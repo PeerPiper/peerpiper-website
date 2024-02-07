@@ -13,13 +13,12 @@
 
 <div class="hero">
 	<PGraphic />
-	<h1 class="title">The easiest way to automatically stay in touch.</h1>
+	<h1 class="title">Your Decentralized Directory.</h1>
+	<h2 class="title">The easiest way to stay in touch.</h2>
 </div>
 <section>
 	<PeerStream />
-	<p class="description">
-		Save anything once, pipe updates to your peers from the privacy of your own devices.
-	</p>
+	<p class="description">Find contacts and be found, even if your details change.</p>
 </section>
 
 <style>
