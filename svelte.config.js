@@ -4,6 +4,7 @@ import { mdsvex } from 'mdsvex';
 import staticIPFSAdapter from 'sveltejs-adapter-ipfs';
 import adapter_static from '@sveltejs/adapter-static';
 import slug from 'remark-slug';
+import rehypeMeta from 'rehype-meta';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -16,7 +17,23 @@ const config = {
 			layout: {
 				standard: 'src/layouts/standard.svelte'
 			},
-			remarkPlugins: [slug]
+			remarkPlugins: [slug],
+			rehypePlugins: [
+				[
+					rehypeMeta,
+					{
+						origin: 'https://peerpiper.io',
+						twitter: true, // generate twitter card meta tags
+						property: [
+							// generate open graph meta tags
+							{ property: 'og:type', content: 'article' },
+							{ property: 'og:title', content: '$title' },
+							{ property: 'og:description', content: '$description' },
+							{ property: 'og:image', content: '$image' }
+						]
+					}
+				]
+			]
 		}),
 		preprocess({
 			scss: {
