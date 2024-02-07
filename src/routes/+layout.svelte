@@ -18,7 +18,7 @@
 	/>
 </svelte:head>
 
-<WalletConnector bind:wallet />
+<!-- <WalletConnector bind:wallet /> -->
 
 <Header />
 
