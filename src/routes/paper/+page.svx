@@ -19,19 +19,21 @@ description: "PeerPiper Protocol Green Paper"
 
 ### The Problem
 
-Managing contacts for both consumers and businesses remains a challenge even with our modern technology. Contacts and accounts are fragmented across different platforms and services, making it difficult to stay connected and up to date.
+Our network of connections is the base layer of our social and professional lives.
 
-Because contacts and accounts are fragmented, the applications layered on top are also broken and rarely interoperate with each other. For instance, I may have your Yahoo email, which you've since abandoned due to spam, and have switched to Gmail. The old phone number I have for you no longer works, and I lack a mechanism to obtain your new one. Perhaps we connected years ago on Twitter, but you no longer use it, leaving me unaware of your current preferred platform.
+Yet, managing contact information for both consumers and businesses remains a challenge even with our modern technology. Contacts and accounts are fragmented across different platforms and services, making it difficult to stay connected and up to date.
 
-Having numerous options to connect has ironically left us disconnected.
+Because this base layer of contacts and accounts are fragmented, the applications layered on top are also broken and rarely interoperate with each other. For instance, I may have your Yahoo email, which you've since abandoned due to spam, and have switched to Gmail. The old phone number I have for you no longer works, and I lack a mechanism to obtain your new one. Perhaps we connected years ago on Twitter, but you no longer use it, leaving me unaware of your current preferred platform.
+
+Having numerous options to connect and the ease of adding new communication channels has ironically left us more disconnected than ever.
 
 ### The Solution
 
-Imagine being able to connect with someone once and perpetually follow updates to their contact and data changes. Imagine if I could retrieve your old phone number, which would direct me to your new one.
+Imagine being able to connect with someone once and perpetually follow updates to their contact and data changes. Imagine if I could retrieve your new phone number from your old one, or your new addrss from your previous residence.
 
 The solution to this problem is not to store all this information in a centralized database behind someone else's walled garden. Rather, the solution is to empower users with control over their own data and provide a means for them to connect and remain connected with others in a decentralized environment.
 
-PeerPiper Protocol presents a novel approach to connect and stay connected with others in a "mecentralized" manner. It is designed to be blockchain-agnostic and public key transparent, enabling usage with or without blockchains and without gas fees. Serving as a gateway from Web 2.0 to Web 3.0, it allows users to effortlessly create, invite, save, share, and even sell their data in Web 3.0 using familiar Web 1.0 technologies such as names, emails, and phone numbers.
+PeerPiper Protocol presents a novel approach to connect and stay connected with others in a "mecentralized" manner. It is designed to be blockchain-agnostic and public key transparent, enabling usage with or without blockchains and without gas fees. Serving as a gateway from Web 2.0 to Web 3.0, it allows users to effortlessly create, invite, save, share, and even sell their data and applciations in Web 3.0 using familiar Web 1.0 technologies such as names, emails, and phone numbers.
 
 The solution inherently puts control and ownership in the hands of the user, thus termed "mecentralized," and is deliberately designed to connect data without collecting it.
 
@@ -46,7 +48,7 @@ The solution inherently puts control and ownership in the hands of the user, thu
 
 # Introduction
 
-PeerPiper serves as a gateway to Web 3.0, facilitating easy connection and sustained connections for users to save, share, and optionally sell their data in the Web3 environment. Our focus lies in connecting data, not collecting it.
+PeerPiper serves as a gateway to the new open internet, facilitating easy connection and sustained connections for users to save, share, and optionally sell their data in the Web3 environment. Our focus lies in connecting data, not collecting it.
 
 PeerPiper Protocol pioneers a novel approach to establishing and maintaining connections in a decentralized environment. It operates independently of blockchains, enabling seamless usage across various blockchain networks. By enabling users to create, invite, save, share, and sell their data in Web3, PeerPiper bridges the transition from Web 2.0 to Web 3.0 while emphasizing data ownership and control.
 
@@ -60,31 +62,31 @@ In both Web 2.0 and emerging Web 3.0 landscapes, contacts and accounts are scatt
 
 The protocol operates as follows:
 
-1. Credential Creation: A credential is created for an individual based on fundamental attributes such as name and number. This credential comprises unique attributes known about the individual, including email address, phone number, public key, social media handle, website, physical address, employer, job title, birthday, or even a shared selfie.
+1. **Credential Creation:** A credential is created for an individual based on fundamental attributes such as name and number. This credential comprises unique attributes known about the individual, including email address, phone number, public key, social media handle, website, physical address, employer, job title, birthday, or even a shared selfie.
 
-2. Credential Delivery: Once the credential is created, it is securely delivered to the individual through various channels such as email, SMS, social media, or Web3. This ensures exclusive access to the recipient, validating their identity.
+2. **Credential Delivery:** Once the credential is created, it is securely delivered to the individual through various channels such as email, SMS, social media, or Web3. This ensures exclusive access to the recipient, validating their identity.
 
-3. Credential Acceptance: The recipient accepts the credential using any application running the PeerPiper Protocol, accessible anywhere with an internet connection, including peerpiper.io, personal websites, IPFS gateway, or Arweave gateway.
+3. **Credential Acceptance:** The recipient accepts the credential using any application running the PeerPiper Protocol, accessible anywhere with an internet connection, including peerpiper.io, personal websites, IPFS gateway, or Arweave gateway.
 
-4. Credential Extension: Upon acceptance, the recipient can extend the credential by adding their own details, including issuer key, contact details, data specifics, or any other relevant information, thus personalizing their profile. Extending the credential is discretionary but enhances connectivity and facilitates efficient updates.
+4. **Credential Extension:** Upon acceptance, the recipient can extend the credential by adding their own details, including issuer key, contact details, data specifics, or any other relevant information, thus personalizing their profile. Extending the credential is discretionary but enhances connectivity and facilitates efficient updates.
 
-5. Credential Publication: The extended credential is published using the PeerPiper Protocol, comprising the key (attributes plus issuer key) and value (additional details and proof of the previously issued credential). This enables others to access updated information.
+5. **Credential Publication:** The extended credential is published using the PeerPiper Protocol, comprising the key (attributes plus issuer key) and value (additional details and proof of the previously issued credential). This enables others to access updated information.
 
-6. Broadcast and Subscription: Initial broadcast of the key-value pair ensures subscribers receive the initial value. Subsequent updates are facilitated through query broadcasts for the same key. A "super peer" (PeerPiper node always online) assists in rebroadcasting in case of sender or receiver offline scenarios.
+6. **Broadcast and Subscription:** Initial broadcast of the key-value pair ensures subscribers receive the initial value. Subsequent updates are facilitated through query broadcasts for the same key. A "super peer" (PeerPiper node always online) assists in rebroadcasting in case of sender or receiver offline scenarios.
 
-7. Subscription to Updates: Users subscribe to updates on specific topics, facilitating ongoing connectivity and information exchange.
+7. **Subscription to Updates:** Users subscribe to updates on specific topics, facilitating ongoing connectivity and information exchange.
 
 # Use Cases
 
 PeerPiper Protocol caters to diverse use cases, including:
 
-1. Personal Contacts: Facilitating connection and sustained communication with friends, family, and colleagues.
+1. **Personal Contacts:** Facilitating connection and sustained communication with friends, family, and colleagues.
 
-2. Business Contacts: Establishing and maintaining connections with customers, clients, and partners, enhancing professional networking.
+2. **Business Contacts:** Establishing and maintaining connections with customers, clients, and partners, enhancing professional networking.
 
-3. Social Media: Connecting and engaging with social media contacts, followers, and friends across various platforms.
+3. **Social Media:** Connecting and engaging with social media contacts, followers, and friends across various platforms.
 
-4. Web3.0: Enabling connectivity within the Web3.0 ecosystem, including blockchain developers, DeFi users, and NFT collectors.
+4. **Web3.0:** Enabling connectivity within the Web3.0 ecosystem, including blockchain developers, DeFi users, and NFT collectors.
 
 
 # Technical Details
