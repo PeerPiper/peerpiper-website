@@ -29,11 +29,11 @@ Having numerous options to connect and the ease of adding new communication chan
 
 ### The Solution
 
-Imagine being able to connect with someone once and perpetually follow updates to their contact and data changes. Imagine if I could retrieve your new phone number from your old one, or your new addrss from your previous residence.
+Imagine being able to connect with someone once and perpetually follow updates to their contact and data changes. Imagine if I could retrieve your new phone number from your old one, or your new address from your previous residence.
 
-The solution to this problem is not to store all this information in a centralized database behind someone else's walled garden. Rather, the solution is to empower users with control over their own data and provide a means for them to connect and remain connected with others in a decentralized environment.
+The solution to this problem is **not** to store all this information in a centralized database behind someone's walled garden. Rather, the solution is to empower users with control over their own data and provide a means for them to connect and remain connected with others in a decentralized environment.
 
-PeerPiper Protocol presents a novel approach to connect and stay connected with others in a "mecentralized" manner. It is designed to be blockchain-agnostic and public key transparent, enabling usage with or without blockchains and without gas fees. Serving as a gateway from Web 2.0 to Web 3.0, it allows users to effortlessly create, invite, save, share, and even sell their data and applciations in Web 3.0 using familiar Web 1.0 technologies such as names, emails, and phone numbers.
+PeerPiper Protocol presents a novel approach to connect and stay connected with others in a "mecentralized" manner. It is designed to be blockchain-absent and public key transparent, enabling usage with or without blockchains and without gas fees. Serving as a gateway from Web 2.0 to Web 3.0, it allows users to effortlessly create, invite, save, share, and even sell their data and applications on the next generation open web using familiar Web 1.0 technologies such as names, emails, and phone numbers.
 
 The solution inherently puts control and ownership in the hands of the user, thus termed "mecentralized," and is deliberately designed to connect data without collecting it.
 
@@ -50,11 +50,11 @@ The solution inherently puts control and ownership in the hands of the user, thu
 
 PeerPiper serves as a gateway to the new open internet, facilitating easy connection and sustained connections for users to save, share, and optionally sell their data in the Web3 environment. Our focus lies in connecting data, not collecting it.
 
-PeerPiper Protocol pioneers a novel approach to establishing and maintaining connections in a decentralized environment. It operates independently of blockchains, enabling seamless usage across various blockchain networks. By enabling users to create, invite, save, share, and sell their data in Web3, PeerPiper bridges the transition from Web 2.0 to Web 3.0 while emphasizing data ownership and control.
+PeerPiper Protocol pioneers a novel approach to establishing and maintaining connections in a decentralized environment. It operates independently of blockchains, enabling seamless usage across various networks. By enabling users to create, invite, save, share, and sell their data in Web3, PeerPiper bridges the transition from Web 2.0 to Web 3.0 while emphasizing data ownership and control.
 
 # Background
 
-In both Web 2.0 and emerging Web 3.0 landscapes, contacts and accounts are scattered across different platforms and services, impeding seamless connectivity. PeerPiper Protocol addresses this challenge by offering a decentralized solution to establish and maintain connections, irrespective of whether users possess an email address, phone number, or public key.
+In both Web 2.0 and emerging Web 3.0 landscapes, contacts and accounts are scattered across different platforms and services, impeding seamless and ongoing connectivity. PeerPiper Protocol addresses this challenge by offering a decentralized solution to establish and maintain connections, irrespective of whether users possess an email address, phone number, or public key.
 
 # Protocol Overview
 
@@ -62,17 +62,17 @@ In both Web 2.0 and emerging Web 3.0 landscapes, contacts and accounts are scatt
 
 The protocol operates as follows:
 
-1. **Credential Creation:** A credential is created for an individual based on fundamental attributes such as name and number. This credential comprises unique attributes known about the individual, including email address, phone number, public key, social media handle, website, physical address, employer, job title, birthday, or even a shared selfie.
+1. **Originator Creates Credential:**The originator of the credential generates it for one of their contacts, based on fundamental attributes such as name and number. This credential comprises unique attributes known about the individual, including email address, phone number, public key, social media handle, website, physical address, employer, job title, birthday, or even a shared selfie.
 
 2. **Credential Delivery:** Once the credential is created, it is securely delivered to the individual through various channels such as email, SMS, social media, or Web3. This ensures exclusive access to the recipient, validating their identity.
 
 3. **Credential Acceptance:** The recipient accepts the credential using any application running the PeerPiper Protocol, accessible anywhere with an internet connection, including peerpiper.io, personal websites, IPFS gateway, or Arweave gateway.
 
-4. **Credential Extension:** Upon acceptance, the recipient can extend the credential by adding their own details, including issuer key, contact details, data specifics, or any other relevant information, thus personalizing their profile. Extending the credential is discretionary but enhances connectivity and facilitates efficient updates.
+4. **Recipient-Driven Extension:** Once accepted, the recipient has complete discretion over extending the credential with additional details. This extension is entirely independent of the sender, who has no control, censorship, or restriction over the information added to the credential. Recipients can personalize their profile by including issuer keys, contact details, data specifics, or any other relevant information according to their preference.
 
-5. **Credential Publication:** The extended credential is published using the PeerPiper Protocol, comprising the key (attributes plus issuer key) and value (additional details and proof of the previously issued credential). This enables others to access updated information.
+5. **Credential Publication:** The extended credential is published using the PeerPiper Protocol, comprising the key (attributes plus issuer key) and value (extended additional details and proof of the previously issued credential). This enables others to access updated information.
 
-6. **Broadcast and Subscription:** Initial broadcast of the key-value pair ensures subscribers receive the initial value. Subsequent updates are facilitated through query broadcasts for the same key. A "super peer" (PeerPiper node always online) assists in rebroadcasting in case of sender or receiver offline scenarios.
+6. **Broadcast and Subscription:** Initial broadcast of the key-value pair ensures subscribers receive the initial value. Subsequent updates are facilitated through query broadcasts for the same key. Other peers in the network, or equivalently any "super peer" (a PeerPiper node always online) assists in rebroadcasting in case of sender or receiver offline scenarios.
 
 7. **Subscription to Updates:** Users subscribe to updates on specific topics, facilitating ongoing connectivity and information exchange.
 
@@ -86,22 +86,22 @@ PeerPiper Protocol caters to diverse use cases, including:
 
 3. **Social Media:** Connecting and engaging with social media contacts, followers, and friends across various platforms.
 
-4. **Web3.0:** Enabling connectivity within the Web3.0 ecosystem, including blockchain developers, DeFi users, and NFT collectors.
+4. **Open Web Apps** Enabling connectivity within a new, secure, flexible application ecosystem.
 
 
 # Technical Details
 
 ## Delegated Anonymous Credentials
 
-At the core of PeerPiper Protocol lies Delegatable Anonymous Credentials (DAC), a cryptographic primitive facilitating issuance of credentials to an audience without prior knowledge of their public key details. DAC streamlines the "invite" process, making it non-interactive and user-friendly.
+At the core of PeerPiper Protocol lies [Delegatable Anonymous Credentials (DAC)](https://github.com/DougAnderson444/delanocreds), a cryptographic primitive facilitating issuance of credentials to an audience without prior knowledge of their public key details. DAC streamlines the "invite" process, making it non-interactive, human readable, and thus user-friendly.
 
-DAC ensures that only individuals possessing the credential and all matching attribute preimages can utilize it effectively. Even if a credential is compromised (e.g., via email hacking), the hacker would require complete attribute information to exploit it fully.
+DAC ensures that only individuals possessing the originally issued credential and all matching attribute preimages can utilize it effectively. Even if a credential is compromised (e.g., via email hacking), the hacker would require complete attribute information to exploit it fully.
 
 Furthermore, DAC supports secure key rotation and recovery mechanisms, ensuring continued accessibility and control over the protocol.
 
 ## Network Publishing
 
-The protocol is blockchain-agnostic and network-agnostic, enabling publication of key-value pairs across various networks. While suitable for broadcast over libp2p, additional networks can be integrated as required.
+The protocol is blockchain-agnostic and network-agnostic, enabling publication of key-value pairs across various networks. While suitable for broadcast over [libp2p](https://libp2p.io/) (by default), additional networks can be integrated as required.
 
 # Conclusion
 
