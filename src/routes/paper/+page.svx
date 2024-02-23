@@ -23,7 +23,7 @@ Our network of connections is the base layer of our social and professional live
 
 Yet, managing contact information for both consumers and businesses remains a challenge even with our modern technology. Contacts and accounts are fragmented across different platforms and services, making it difficult to stay connected and up to date.
 
-Because this base layer of contacts and accounts are fragmented, the applications layered on top are also broken and rarely interoperate with each other. For instance, I may have your Yahoo email, which you've since abandoned due to spam, and have switched to Gmail. The old phone number I have for you no longer works, and I lack a mechanism to obtain your new one. Perhaps we connected years ago on Twitter, but you no longer use it, leaving me unaware of your current preferred platform.
+Because this base layer of contacts and accounts are fragmented, the applications layered on top are also broken and rarely interoperate with each other. For instance, I may have your Yahoo email, which you've since abandoned due to spam, and have switched to Gmail. The old phone number I have for you no longer works, and I lack a mechanism to obtain your new one. Perhaps we connected years ago on Twitter, but you no longer use it, leaving me unaware of your current preferred platform. "Sorry for the late reply, I'm not on this platform very often" is an indication that we need to interoperate better.
 
 Having numerous options to connect and the ease of adding new communication channels has ironically left us more disconnected than ever.
 
