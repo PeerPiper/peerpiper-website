@@ -97,7 +97,7 @@ At the core of PeerPiper Protocol lies [Delegatable Anonymous Credentials (DAC)]
 
 DAC ensures that only individuals possessing the originally issued credential and all matching attribute preimages can utilize it effectively. Even if a credential is compromised (e.g., via email hacking), the hacker would require complete attribute information to exploit it fully.
 
-Furthermore, DAC supports secure key rotation and recovery mechanisms, ensuring continued accessibility and control over the protocol.
+Furthermore, DAC supports secure key rotation and recovery mechanisms, ensuring continued accessibility and control over the protocol. The holder of the DAC simply retreives the originally offered credential (from the email, the text message, the Twitter DM, etc) then re-issues the extended credential with their new keypair. Since discovery is based on the _Issuer's_ public key, the holder's key can be easily rotated without disrupting discovery. 
 
 ## Network Publishing
 

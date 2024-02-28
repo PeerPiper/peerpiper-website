@@ -14,7 +14,7 @@
 <div class="hero">
 	<PGraphic />
 	<h1 class="title">Your Decentralized Directory.</h1>
-	<h2 class="title">The easiest way to stay in touch.</h2>
+	<h2 class="title">The easiest way to stay in touch, effectively forever.</h2>
 </div>
 <section>
 	<PeerStream />
