@@ -58,6 +58,10 @@ In both Web 2.0 and emerging Web 3.0 landscapes, contacts and accounts are scatt
 
 # Protocol Overview
 
+## PeerWise Pointer Protocol
+
+PeerPiper introduces a novel protocol, termed the "PeerWise Pointer Protocol", to facilitate perpetual connectivity and information exchange between peers. 
+
 <Protocol />
 
 The protocol operates as follows:
