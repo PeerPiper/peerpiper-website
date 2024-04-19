@@ -1,8 +1,8 @@
 ---
 layout: "standard"
-title: PeerPiper Protocol Green Paper
+title: PeerPiper Protocols Green Paper
 image: https://peerpiper.io/protocol.png
-description: "PeerPiper Protocol Green Paper"
+description: "PeerPiper Protocols Green Paper"
 ---
 
 <svelte:head>
@@ -33,7 +33,7 @@ Imagine being able to connect with someone once and perpetually follow updates t
 
 The solution to this problem is **not** to store all this information in a centralized database behind someone's walled garden. Rather, the solution is to empower users with control over their own data and provide a means for them to connect and remain connected with others in a decentralized environment.
 
-PeerPiper Protocol presents a novel approach to connect and stay connected with others in a "mecentralized" manner. It is designed to be blockchain-absent and public key transparent, enabling usage with or without blockchains and without gas fees. Serving as a gateway from Web 2.0 to Web 3.0, it allows users to effortlessly create, invite, save, share, and even sell their data and applications on the next generation open web using familiar Web 1.0 technologies such as names, emails, and phone numbers.
+The PeerPiper PeerWise Pointer Protocol presents a novel approach to connect and stay connected with others in a "mecentralized" manner. It is designed to be blockchain-absent and public key transparent, enabling usage with or without blockchains and without gas fees. Serving as a gateway from Web 2.0 to Web 3.0, it allows users to effortlessly create, invite, save, share, and even sell their data and applications on the next generation open web using familiar Web 1.0 technologies such as names, emails, and phone numbers.
 
 The solution inherently puts control and ownership in the hands of the user, thus termed "mecentralized," and is deliberately designed to connect data without collecting it.
 
@@ -50,17 +50,17 @@ The solution inherently puts control and ownership in the hands of the user, thu
 
 PeerPiper serves as a gateway to the new open internet, facilitating easy connection and sustained connections for users to save, share, and optionally sell their data in the Web3 environment. Our focus lies in connecting data, not collecting it.
 
-PeerPiper Protocol pioneers a novel approach to establishing and maintaining connections in a decentralized environment. It operates independently of blockchains, enabling seamless usage across various networks. By enabling users to create, invite, save, share, and sell their data in Web3, PeerPiper bridges the transition from Web 2.0 to Web 3.0 while emphasizing data ownership and control.
+PeerPiper PeerWise Pointer Protocol pioneers a novel approach to establishing and maintaining connections in a decentralized environment. It operates independently of blockchains, enabling seamless usage across various networks. By enabling users to create, invite, save, share, and sell their data in Web3, PeerPiper bridges the transition from Web 2.0 to Web 3.0 while emphasizing data ownership and control.
 
 # Background
 
-In both Web 2.0 and emerging Web 3.0 landscapes, contacts and accounts are scattered across different platforms and services, impeding seamless and ongoing connectivity. PeerPiper Protocol addresses this challenge by offering a decentralized solution to establish and maintain connections, irrespective of whether users possess an email address, phone number, or public key.
+In both Web 2.0 and emerging Web 3.0 landscapes, contacts and accounts are scattered across different platforms and services, impeding seamless and ongoing connectivity. PeerPiper PeerWise Pointer Protocol addresses this challenge by offering a decentralized solution to establish and maintain connections, irrespective of whether users possess an email address, phone number, or public key.
 
 # Protocol Overview
 
 ## PeerWise Pointer Protocol
 
-PeerPiper introduces a novel protocol, termed the "PeerWise Pointer Protocol", to facilitate perpetual connectivity and information exchange between peers. 
+PeerPiper introduces a novel protocol, termed the "PeerWise Pointer Protocol", to facilitate perpetual connectivity and information exchange between peers. It is "PeerWise" becasue it is established between peers, and it is a "Pointer" because it points to the latest data that peer has available to publish.
 
 <Protocol />
 
