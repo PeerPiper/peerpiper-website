@@ -92,6 +92,8 @@ PeerPiper Protocol caters to diverse use cases, including:
 
 4. **Open Web Apps** Enabling connectivity within a new, secure, flexible application ecosystem.
 
+5. **Mesh Data for AI:** Providing a decentralized data source for AI and machine learning applications.
+
 
 # Technical Details
 
