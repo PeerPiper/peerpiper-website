@@ -3,10 +3,10 @@
 	import logo from './p.svg';
 </script>
 
-<header>
-	<div class="corner">
-		<a href="https://peerpiper.io">
-			<img src={logo} alt="peerpiper.io" />
+<header class="flex">
+	<div class="flex-1 justify-center items-center max-h-8 max-w-8">
+		<a href="/">
+			<img src={logo} alt="peerpiper.io" class="m-2 w-auto aspect-auto" />
 		</a>
 	</div>
 
@@ -15,12 +15,14 @@
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
 		<ul>
-			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
+			<li class:active={$page.url.pathname === '/'}>
+				<a data-sveltekit-preload-data href="/">Home</a>
+			</li>
 			<li class:active={$page.url.pathname === '/paper'}>
-				<a sveltekit:prefetch href="/paper">GreenPaper</a>
+				<a data-sveltekit-preload-data href="/paper">GreenPaper</a>
 			</li>
 			<li class:active={$page.url.pathname === '/guide'}>
-				<a sveltekit:prefetch href="/guide">About</a>
+				<a data-sveltekit-preload-data href="/guide">About</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -37,25 +39,6 @@
 	header {
 		display: flex;
 		justify-content: space-between;
-	}
-
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
 	}
 
 	nav {

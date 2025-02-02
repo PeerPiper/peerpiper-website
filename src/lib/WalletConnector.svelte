@@ -15,7 +15,8 @@
 </script>
 
 {#if Web3WalletMenu}
-	<Web3WalletMenu
+	<svelte:component
+		this={Web3WalletMenu}
 		{inputUrl}
 		on:walletReady={(e) => {
 			wallet = e.detail.wallet;

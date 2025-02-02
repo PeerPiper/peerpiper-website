@@ -19,31 +19,32 @@
 </svelte:head>
 
 <!-- <WalletConnector bind:wallet /> -->
+<div class="flex flex-col min-h-screen">
+	<Header />
 
-<Header />
+	<main class="flex-grow">
+		<slot />
+	</main>
 
-<main>
-	<slot />
-</main>
-
-<footer>
-	<span>Join the community</span>
-	<div>
-		<div class="icons">
-			<a href="https://github.com/peerpiper/" target="_blank" rel="noopener noreferrer"
-				><i class="fa fa-github fa-2x" aria-hidden="true" /></a
-			><a href="https://discord.gg/pxK3rApf" target="_blank" rel="noopener noreferrer">
-				<Discord />
-			</a>
-			<a href="https://twitter.com/DougAnderson444" target="_blank">
-				<Twitter />
-			</a>
-			<a href="https://medium.com/peerpiper/" target="_blank" rel="noopener noreferrer">
-				<Medium /></a
-			>
+	<footer>
+		<span>Join the community</span>
+		<div>
+			<div class="icons">
+				<a href="https://github.com/peerpiper/" target="_blank" rel="noopener noreferrer"
+					><i class="fa fa-github fa-2x" aria-hidden="true" /></a
+				><a href="https://discord.gg/pxK3rApf" target="_blank" rel="noopener noreferrer">
+					<Discord />
+				</a>
+				<a href="https://twitter.com/DougAnderson444" target="_blank">
+					<Twitter />
+				</a>
+				<a href="https://medium.com/peerpiper/" target="_blank" rel="noopener noreferrer">
+					<Medium /></a
+				>
+			</div>
 		</div>
-	</div>
-</footer>
+	</footer>
+</div>
 
 <style>
 	.icons {
@@ -73,7 +74,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 40px;
+		padding: 20px;
 	}
 
 	footer a {
@@ -82,7 +83,7 @@
 
 	@media (min-width: 480px) {
 		footer {
-			padding: 40px 0;
+			padding: 20px 0;
 		}
 	}
 </style>

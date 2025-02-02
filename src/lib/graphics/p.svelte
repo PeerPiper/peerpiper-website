@@ -8,7 +8,7 @@
 	});
 </script>
 
-<div>
+<div class="flex items-center justify-center h-20 w-20 bg-red-500 rounded-full">
 	{#if visible}
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

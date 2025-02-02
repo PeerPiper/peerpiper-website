@@ -1,4 +1,19 @@
+/* Use postcss-imports so we can use @import statements */
+
+@import 'tailwindcss/base'; /* @tailwind base; */
+
+@import 'tailwindcss/components'; /* @tailwind components; */
+
+@import 'tailwindcss/utilities'; /* @tailwind utilities; */
+
 @import '@fontsource/fira-mono';
+
+/* Use Tailwind CSS to set all a links to #2ec73d */
+@layer base {
+	a {
+		@apply text-[#2ec73d];
+	}
+}
 
 :root {
 	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
@@ -55,11 +70,6 @@ li {
 
 p {
 	line-height: 1.5;
-}
-
-a {
-	color: var(--accent-color);
-	text-decoration: none;
 }
 
 a:hover {

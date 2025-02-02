@@ -11,7 +11,7 @@
 	<title>PeerPiper.io</title>
 </svelte:head>
 
-<div class="hero">
+<div class="justify-center text-center align-middle items-center">
 	<PGraphic />
 	<h1 class="title">Your Decentralized Directory.</h1>
 	<h2 class="title">The easiest way to stay in touch, effectively forever.</h2>
